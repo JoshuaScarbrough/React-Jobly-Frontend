@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Alert from "../common/Alert";
 
 /** Signup form.
@@ -14,7 +14,7 @@ import Alert from "../common/Alert";
  */
 
 function SignupForm({ signup }) {
-  const history = useNavigate();
+  const history = useHistory();
   const [formData, setFormData] = useState({
     username: "",
     password: "",
